@@ -64,7 +64,11 @@
       </div>
       <div class="col-lg-7">
         <div class="hero-img-wrap">
-          <img src="/images/l-thinners.png" class="img-fluid">
+<!--          <img src="/images/l-thinners.png" class="img-fluid">-->
+          <img *ngIf="currentIndex === 0" src="/images/l-thinners.png" class="img-fluid" alt="image" style="width: 350px; height: 360px; margin-left: 25%; margin-top: 10%">
+          <img *ngIf="currentIndex === 1" src="/images/snake-repellent.png" class="img-fluid" alt="image2" style="width: 350px; height: 360px; margin-left: 25%; margin-top: 10%">
+          <img *ngIf="currentIndex === 2" src="/images/germdis1.png" class="img-fluid" alt="image3" style="width: 350px; height: 360px; margin-left: 25%; margin-top: 10%">
+
         </div>
       </div>
     </div>
