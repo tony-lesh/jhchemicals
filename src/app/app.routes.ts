@@ -2,7 +2,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
-import {CommonModule, NgOptimizedImage} from "@angular/common";
+import {APP_BASE_HREF, CommonModule, NgOptimizedImage} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientModule} from "@angular/common/http";
@@ -52,6 +52,8 @@ export const routes: Routes = [];
 }),
 NgOptimizedImage
   ],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/qa-jhchemicals/' }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
